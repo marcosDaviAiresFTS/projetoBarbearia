@@ -6,7 +6,6 @@ const db = require('./db.js');
 
 app.use(bodyParser.json());
 
-
 app.post('/login', async (req, res) => {
     const { login, senha } = req.body;
     try {
