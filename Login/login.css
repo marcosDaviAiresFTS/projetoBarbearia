@@ -1,0 +1,16 @@
+.ctn__image__login {
+    background: goldenrod;
+    width: 1157px;
+    height: 100%;
+}
+
+.ctn__image {
+    height: 100vh;
+    /* overflow: hidden; */
+    background: url(Assets/imageLogin.svg);
+    background-repeat: no-repeat;
+}
+
+#image__login {
+    background-size: cover;
+}
