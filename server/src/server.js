@@ -8,7 +8,7 @@ import { authRouter } from './api/auth/auth.js';
 app.use(bodyParser.json());
 
 app.use('/api/auth', authRouter)
-
+app.use('/api/preco', )
 app.use(express.static('client'))
 
 app.listen(port, function () {
