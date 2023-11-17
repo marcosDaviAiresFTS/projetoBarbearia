@@ -20,11 +20,18 @@ authRouter.route('/')
             res.status (500).json ({message: 'Erro interno no servidor'})
         }
     })
+
     authRouter.route('/criar-conta').post( async function (req, res) {
         console.log('Rota 2');
-        const { login, senha} = req.body
+        const { login, senha } = req.body
 
         try {
+            const checandoLogin = await pool.query('SELECT * FROM usuarios WHERE login = $1', [login]);
+
+            if (checandoLogin.rows.length > 0) {
+                return res.status(400).json({ message: 'Este login já está em uso' });
+            }    
+            
             const result = await pool.query('INSERT INTO usuarios (login, senha) VALUES ($1, $2) RETURNING *', [login, senha]);
             res.json ({message: 'Conta criada com sucesso!'})
         } catch (error) {
@@ -32,4 +39,5 @@ authRouter.route('/')
             res.status(500).json ({message: 'Erro interno no servidor'});
         }
     })
+
 
