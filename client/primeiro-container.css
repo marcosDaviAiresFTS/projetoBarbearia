@@ -1,0 +1,148 @@
+/* HEADER DO SITE -- TOPO */
+
+.ctn_nav {
+    padding: 20px 0px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+li {
+    color: #525252;
+}
+
+.nav_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca_empresa {
+    font-family: 'Alatsi', sans-serif;
+}
+
+.marca_empresa #nome_empresa {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.marca_empresa #subtitulo_empresa {
+    font-size: 0.8em;
+}
+
+.nav_left ul {
+    display: flex;
+}
+
+.nav_left ul li {
+    cursor: pointer;
+    margin-right: 40px;
+    list-style: none;
+    color: #eeeeee;
+    font-size: 1.1em;
+}
+
+.nav_left ul li:last-child {
+    margin-right: 0;
+}
+
+.nav_right ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_right ul li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 15px;
+    color: #F4F4F4;
+}
+
+.nav_right ul li img {
+    margin-left: 15px;
+}
+
+/* ELEMENTOS DO HEADER ACIMA */
+/* ELEMENTOS CONTAINER IMAGEM E DESCRIÇÃO ABAIXO */
+
+.ctn_incial {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background: url(assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #DFDFDF;
+    padding: 0px 2vw;
+    height: 80%;
+}
+
+.ctn_inicial_imagens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95%;
+}
+
+.ctn_inicial_descricoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    height: 90%;
+}
+
+.ctn_inicial_descricoes h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 1em;
+    width: 900px;
+}
+
+.textos_descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ctn_inicial_descricoes h2 {
+    width: 500px;
+    line-height: 1.2em;
+    margin-top: 20px;
+}
+
+.ctn_inicial_descricoes #efeito_blur {
+    position: absolute;
+    height: 70%;
+}
+
+.textos_descricao #servicos_barbearia {
+    font-family: 'Inter Tight', sans-serif;
+    padding: 17px 10px;
+    margin-top: 20px;
+    width: 300px;
+    background-color: wheat;
+    font-size: 1.3em;
+    color: #0E1719;
+    border-radius: 2em;
+    border: none;
+    cursor: pointer;
+}
+
+#slide_modeloOne {
+    height: 90%;
+}
+
+.slide_modelo {
+    margin: 0px 5px;
+    height: 90%;
+    border-radius: 0.7em;
+}

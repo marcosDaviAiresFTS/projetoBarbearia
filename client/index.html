@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="section-top.css">
+    <link rel="stylesheet" type="text/css" href="primeiro-container.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&display=swap"
@@ -14,14 +14,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
     <title>QuickCut</title>
 </head>
 
 <body>
-    <section class="container__top">
-        <header class="container__nav">
-            <nav class="nav__left">
+
+    <section class="ctn_incial">
+        <header class="ctn_nav">
+            <nav class="nav_left">
+                <!-- <div class="marca_empresa">
+                    <h1 id="nome_empresa">SANTO CORTE</h1>
+                    <span id="subtitulo_empresa"> MASC - FEM 2023</span> -->
                 <ul>
                     <li>Categorias</li>
                     <li>Tendências</li>
@@ -29,19 +38,28 @@
                     <li>Agendamento</li>
                 </ul>
             </nav>
-            <img src="assets/foto-homem-topo.svg" id="modelo__topo">
-            <nav class="nav__right">
+            <nav class="nav_right">
                 <ul>
-                    <li>Registro</li>
-                    <hr id="barrinha"/>
-                    <li>Login
+                    <li>
                         <img src="assets/icone-usuario.svg" alt="">
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <section class="descricao__top"></section>
+        <div class="ctn_inicial_descricoes">
+            <div class="textos_descricao">
+                <h1>A arte milenar da barbearia, com um toque moderno. </h1>
+                <h2>Conheça os serviços da nossa Barbearia clicando no botão abaixo</h2>
+                <button id="servicos_barbearia">Serviços da Barbearia</button>
+            </div>
+            <div class="ctn_inicial_imagens">
+                <img src="assets/rosto.png" id="slide_modeloOne" class="slide_modelo">
+                <img src="assets/slide-modelo.png" id="slide_modeloTwo" class="slide_modelo">
+            </div>
+            <img src="assets/efeito-blur.png" id="efeito_blur" width="95%">
+        </div>
+
 
     </section>
 </body>
