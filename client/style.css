@@ -7,6 +7,7 @@ body {
     box-sizing: border-box;
     height: 100vh;
     background-color: #364B46;
+    font-family: 'Inter Tight', sans-serif;
 }
 
 .espaco {

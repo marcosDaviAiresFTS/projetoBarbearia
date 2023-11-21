@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="primeiro-container.css">
     <link rel="stylesheet" type="text/css" href="container-previa-galeria.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
-    <title>QuickCut</title>
+    <title>Barber Shop</title>
 </head>
 
 <body>
@@ -41,11 +42,23 @@
                 </ul>
             </nav>
             <nav class="nav_right">
-                <ul>
-                    <li>
+                <div class="saudacao_usuario">
+                    <div class="menu_conta" id="menu_conta">
+                        <span>Tudo bom? <br> <b>Entrar / Registrar</b></span>
                         <img src="assets/icon-perfil.png" height="80%">
-                    </li>
-                </ul>
+                    </div>
+                    <div />
+                    <div class="perfil_usuario">
+                        <ul class="menu_conta_usuario" id="menu_conta_usuario">
+                            <i class="fa-solid fa-sort-up fa-xl" style="color: #f8f8f8;" id="seta_menu"></i>
+                            <li><a href="#" id="entrar_usuario">Entrar</a></li>
+                            <li><a href="#" id="registro_usuario">Registrar</a></li>
+                            <hr>
+                            <li>Meu Perfil</li>
+                            <li>Agendamentos</li>
+                            <li>Sair</li>
+                        </ul>
+                    </div>
             </nav>
         </header>
 
@@ -147,6 +160,7 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/49e77ccda7.js" crossorigin="anonymous"></script>
+    <script src="scripts/menu-header.js"></script>
 </body>
 
 </html>

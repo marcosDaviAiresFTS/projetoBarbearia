@@ -48,22 +48,8 @@ li {
     margin-right: 0;
 }
 
-.nav_right ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav_right ul li {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    margin-left: 15px;
-    color: #F4F4F4;
-}
-
-.nav_right ul li img {
-    margin-left: 15px;
+.nav_right {
+    position: relative;
 }
 
 /* ELEMENTOS DO HEADER ACIMA */

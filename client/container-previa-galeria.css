@@ -23,9 +23,11 @@
 .selecionar_previa_corte #titulo_galeria {
     line-height: 1em;
     font-size: 2.5em;
+    color: #364B46;
 }
 
 .selecionar_previa_corte #subtitulo_galeria {
+    color: #364B46;
     font-weight: 400;
     font-size: 1.5em;
 }
@@ -47,7 +49,7 @@
     width: 50%;
 }
 
-.selecao_corte p{
+.selecao_corte p {
     font-size: 1.2em;
 }
 
@@ -83,6 +85,9 @@
     margin: 0px 2px;
     border-radius: 7px;
     cursor: pointer;
+    -webkit-box-shadow: 0px 2px 15px -3px rgba(0, 0, 0, 0.59);
+    box-shadow: 0px 2px 90px -3px rgba(0, 0, 0, 0.59);
+    
 }
 
 .galeria_cortes ul li:last-child {
