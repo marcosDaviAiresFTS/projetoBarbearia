@@ -8,8 +8,12 @@ import { agendamento } from './api/agendamento/agendamento.js';
 
 app.use(bodyParser.json());
 
+<<<<<<< HEAD
 app.use('/api/auth', authRouter);
 app.use('/api/agendamento', agendamento);
+=======
+app.use('/api/auth', authRouter)
+>>>>>>> dd8472eee40856d7b7bdfae67c98e928dc0e114d
 app.use(express.static('client'))
 
 app.listen(port, function () {

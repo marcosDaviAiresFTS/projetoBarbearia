@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="section-top.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&display=swap"
@@ -14,14 +13,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
-    <title>QuickCut</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+    <title>Barber Shop</title>
 </head>
 
 <body>
-    <section class="container__top">
-        <header class="container__nav">
-            <nav class="nav__left">
+
+    <section class="ctn_incial">
+        <header class="ctn_nav">
+            <nav class="nav_left">
+                <!-- <div class="marca_empresa">
+                    <h1 id="nome_empresa">SANTO CORTE</h1>
+                    <span id="subtitulo_empresa"> MASC - FEM 2023</span> -->
                 <ul>
                     <li>Categorias</li>
                     <li>Tendências</li>
@@ -29,21 +37,124 @@
                     <li>Agendamento</li>
                 </ul>
             </nav>
-            <img src="assets/foto-homem-topo.svg" id="modelo__topo">
-            <nav class="nav__right">
-                <ul>
-                    <li>Registro</li>
-                    <hr id="barrinha"/>
-                    <li>Login
-                        <img src="assets/icone-usuario.svg" alt="">
-                    </li>
-                </ul>
+            <nav class="nav_right">
+                    <div class="menu_conta" id="menu_conta">
+                        <span>Tudo bom? <br> <b>Entrar / Registrar</b></span>
+                        <img src="assets/icon-perfil.png" height="80%">
+                    </div>
+                    <div class="perfil_usuario">
+                        <ul class="menu_conta_usuario" id="menu_conta_usuario">
+                            <i class="fa-solid fa-sort-up fa-xl" style="color: #f8f8f8;" id="seta_menu"></i>
+                            <li><a href="#" id="entrar_usuario">Entrar</a></li>
+                            <li><a href="#" id="registro_usuario">Registrar</a></li>
+                            <hr>
+                            <li>Meu Perfil</li>
+                            <li>Agendamentos</li>
+                            <li>Sair</li>
+                        </ul>
+                    </div>
             </nav>
         </header>
 
-        <section class="descricao__top"></section>
+        <div class="ctn_inicial_descricoes">
+            <div class="textos_descricao">
+                <h1>A arte milenar da barbearia, com um toque moderno. </h1>
+                <h2>Conheça os serviços da nossa Barbearia clicando no botão abaixo</h2>
+                <button id="servicos_barbearia">Serviços da Barbearia</button>
+            </div>
+            <div class="ctn_inicial_imagens">
+                <img src="assets/rosto.png" id="slide_modeloOne" class="slide_modelo">
+                <img src="assets/slide-modelo.png" id="slide_modeloTwo" class="slide_modelo">
+            </div>
+            <!-- <img src="assets/efeito-blur.png" id="efeito_blur" width="95%"> -->
+        </div>
+
 
     </section>
+    <section class="ctn_previa_galeria">
+        <img src="assets/adicional-previas-galeria.png" id="bkg_previas">
+        <div class="selecionar_previa_corte">
+            <h3 id="titulo_galeria"><i> Veja como ficou <br> o corte dos nossos clientes</i></h3>
+            <h3 id="subtitulo_galeria"><i>e inspire-se a fazer o seu!</i></h3>
+
+            <div class="selecionar_corte_galeria">
+                <div class="selecao_corte">
+                    <i>
+                        <p>Selecionar corte <i class="fa-solid fa-caret-down arrow-corte"></i></p>
+                        <span>Ex: Mullet</span>
+                    </i>
+                </div>
+                <div class="selecionar_tipo_corte">
+                    <i>
+                        <p>Tipo <i class="fa-solid fa-caret-down arrow-tipo"></i></p>
+                        <span>Clássico</span>
+                    </i>
+                </div>
+            </div>
+
+        </div>
+        <div class="galeria_cortes">
+            <ul>
+                <li><img src="assets/galeria-cortes/img1.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
+                <li><img src="assets/galeria-cortes/img2.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
+                <li><img src="assets/galeria-cortes/img4.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
+                <li><img src="assets/galeria-cortes/img5.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
+                <li><img src="assets/galeria-cortes/img6.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
+                <li><img src="assets/galeria-cortes/img7.jpg" class="exemplos_galeria" id="ultima_foto_galeria"
+                        alt="exemplos-galeria">
+                    <div class="vermais_galeria">
+                        <button> Ver mais</button>
+                        <img src="assets/icon-galeria.svg" alt="icon-galeria">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="espaco"></section>
+    <footer>
+        <div class="ctn_footer">
+            <nav class="nav_footer">
+                <div class="suporte">
+                    <h2>Suporte</h2>
+                    <ul>
+                        <li>Privacidade</li>
+                        <li>Políticas da Empresa</li>
+                        <li>Atendimento</li>
+                        <li>Localização</li>
+                        <li>Agendamentos</li>
+                    </ul>
+                </div>
+                <div class="localizacao">
+                    <h2>Locais</h2>
+                    <ul>
+                        <li>Av. Jerônimo - Cohama</li>
+                        <li>Santo Dumont - Cohab</li>
+                        <li>Rua. dos Barbeiros - São Cristóvão</li>
+                        <li>Av. São Raimundo - Anjo da Guarda</li>
+                    </ul>
+                </div>
+                <div class="contatos">
+                    <h2>Contato</h2>
+                    <ul>
+                        <li>WhatsApp</li>
+                        <li>Instagram</li>
+                        <li>Linkedin</li>
+                        <li>Telegram</li>
+                    </ul>
+                </div>
+                <div class="novidades_clientes">
+                    <h2>Fique informado</h2>
+                    <p>Receba atualizações sobre nossos serviços, toda semana temos novidades para você.</p>
+                    <input type="text" id="novidades_email_usuario">
+                </div>
+            </nav>
+            <hr />
+            <p id="descricao_footer">Barbershop. © 2023 </p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/49e77ccda7.js" crossorigin="anonymous"></script>
+    <script src="menu-header.js"></script>
 </body>
 
 </html>
