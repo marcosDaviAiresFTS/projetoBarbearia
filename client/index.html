@@ -24,135 +24,103 @@
 
 <body>
 
-    <section class="ctn_incial">
-        <header class="ctn_nav">
-            <nav class="nav_left">
-                <!-- <div class="marca_empresa">
-                    <h1 id="nome_empresa">SANTO CORTE</h1>
-                    <span id="subtitulo_empresa"> MASC - FEM 2023</span> -->
-                <ul>
-                    <li>Categorias</li>
-                    <li>Tendências</li>
-                    <li>Privacidade</li>
-                    <li>Agendamento</li>
+    <img src="assets/background-colorido-direita.svg" id="background-colorido">
+
+    <section class="ctn-landing-page">
+        <header class="header-main">
+            <div class="logo-empresa">
+                <img src="assets/logotipo-pagina.svg" alt="logo-empresa">
+                <img src="assets/nome-empresa.svg" alt="nome-empresa">
+            </div>
+            <nav class="nav-menu" id="nav-menu-left">
+                <ul class="list-nav-left">
+                    <li>Início</li>
+                    <li>Quem somos</li>
+                    <li>Serviços</li>
+                    <li>Contatos</li>
                 </ul>
             </nav>
-            <nav class="nav_right">
-                    <div class="menu_conta" id="menu_conta">
-                        <span>Tudo bom? <br> <b>Entrar / Registrar</b></span>
-                        <img src="assets/icon-perfil.png" height="80%">
-                    </div>
-                    <div class="perfil_usuario">
-                        <ul class="menu_conta_usuario" id="menu_conta_usuario">
-                            <i class="fa-solid fa-sort-up fa-xl" style="color: #f8f8f8;" id="seta_menu"></i>
-                            <li><a href="#" id="entrar_usuario">Entrar</a></li>
-                            <li><a href="#" id="registro_usuario">Registrar</a></li>
-                            <hr>
-                            <li>Meu Perfil</li>
-                            <li>Agendamentos</li>
-                            <li>Sair</li>
-                        </ul>
-                    </div>
+
+            <nav class="nav-menu" id="nav-menu-right">
+                <div class="user-profile-description" id="user-perfil">
+                    <ul class="list-nav-description">
+                        <li>Tudo bom? <br> <b>Entrar / Registrar</b></li>
+                        <li><img src="assets/user-profile.svg"></li>
+                        <div class="login-icon">
+                        </div>
+                    </ul>
+                </div>
+                <div class="user-profile-panel" id="user-panel">
+                    <ul class="user-profile-list" id="list-profile">
+                        <i class="fa-solid fa-sort-up fa-xl" style="color: #f8f8f8;" id="arrow-profile-list"></i>
+                        <li><a href="#" id="btn-enter-user-account">Entrar</a></li>
+                        <li><a href="#" id="btn-register-user-account">Registrar</a></li>
+                        <hr>
+                        <li>Meu Perfil</li>
+                        <li>Agendamentos</li>
+                        <li>Sair</li>
+                    </ul>
+                </div>
             </nav>
         </header>
-
-        <div class="ctn_inicial_descricoes">
-            <div class="textos_descricao">
-                <h1>A arte milenar da barbearia, com um toque moderno. </h1>
-                <h2>Conheça os serviços da nossa Barbearia clicando no botão abaixo</h2>
-                <button id="servicos_barbearia">Serviços da Barbearia</button>
-            </div>
-            <div class="ctn_inicial_imagens">
-                <img src="assets/rosto.png" id="slide_modeloOne" class="slide_modelo">
-                <img src="assets/slide-modelo.png" id="slide_modeloTwo" class="slide_modelo">
-            </div>
-            <!-- <img src="assets/efeito-blur.png" id="efeito_blur" width="95%"> -->
-        </div>
-
-
-    </section>
-    <section class="ctn_previa_galeria">
-        <img src="assets/adicional-previas-galeria.png" id="bkg_previas">
-        <div class="selecionar_previa_corte">
-            <h3 id="titulo_galeria"><i> Veja como ficou <br> o corte dos nossos clientes</i></h3>
-            <h3 id="subtitulo_galeria"><i>e inspire-se a fazer o seu!</i></h3>
-
-            <div class="selecionar_corte_galeria">
-                <div class="selecao_corte">
-                    <i>
-                        <p>Selecionar corte <i class="fa-solid fa-caret-down arrow-corte"></i></p>
-                        <span>Ex: Mullet</span>
-                    </i>
-                </div>
-                <div class="selecionar_tipo_corte">
-                    <i>
-                        <p>Tipo <i class="fa-solid fa-caret-down arrow-tipo"></i></p>
-                        <span>Clássico</span>
-                    </i>
-                </div>
-            </div>
-
-        </div>
-        <div class="galeria_cortes">
-            <ul>
-                <li><img src="assets/galeria-cortes/img1.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
-                <li><img src="assets/galeria-cortes/img2.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
-                <li><img src="assets/galeria-cortes/img4.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
-                <li><img src="assets/galeria-cortes/img5.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
-                <li><img src="assets/galeria-cortes/img6.jpg" class="exemplos_galeria" alt="exemplos-galeria"></li>
-                <li><img src="assets/galeria-cortes/img7.jpg" class="exemplos_galeria" id="ultima_foto_galeria"
-                        alt="exemplos-galeria">
-                    <div class="vermais_galeria">
-                        <button> Ver mais</button>
-                        <img src="assets/icon-galeria.svg" alt="icon-galeria">
+        <section class="ctn-main">
+            <main class="main-body-start">
+                <div class="title-main">
+                    <div class="descriptionMain-title">
+                        <h1 class="h1-number-one">bem-<i>vindo a</i>,</h1>
+                        <h1>barberShop</h1>
                     </div>
-                </li>
-            </ul>
-        </div>
+                    <div class="subDescription-title">
+                        <ul class="list-subDescription">
+                            <li>A arte milenar da barbearia, com um toque moderno.</li>
+                            <li>Estamos com Ofertas nesse final de ano, clique para ver</li>
+                        </ul>
+                        <button class="main-button-page">Ver Oferta</button>
+                    </div>
+            </main>
+            <div class="customer-review-home-page">
+                <div class="review-one">
+                    <img src="assets/share-icon.svg" alt="icon-share">
+                    <div class="description-review">
+                        <p class="title-description">Convide pessoas</p>
+                        <p class="subTitle-description">Convide 5 amigos e ganhe <br> um corte de graça.</p>
+                    </div>
+                </div>
+                <div class="review-two">
+                    <img src="assets/tempo-icon.svg" alt="" class="icons-review">
+                    <div class="description-review">
+                        <p class="title-description">Contrary to popular belief,</p>
+                        <p class="subTitle-description">Lorem Ipsum is not simply random text. It has roots in a piece of classical<p>
+                    </div>
+                </div>
+                <div class="review-three">
+                    <img src="assets/relampago-icon.svg" alt="" class="icons-review">
+                    <div class="description-review">
+                        <p class="title-description">This book is a ethics</p>
+                        <p class="subTitle-description">Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,</p>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-media">
+                <ul class="list-social-media-footer">
+                    <li><a href="#"><img src="assets/social-media-wpp.svg" alt="app-whatsapp"></a></li>
+                    <li><a href="#"><img src="assets/social-media-linkedin.png" alt="app-whatsapp"></a></li>
+                    <li><a href="#"><img src="assets/social-media-instagram.png" alt="app-whatsapp"></a></li>
+                    <li><a href="#"><img src="assets/social-media-telegram.png" alt="app-whatsapp"></a></li>
+                </ul>
+            </div>
+            <div class="location-footer">
+                <span>Av. São Raimundo, Q. 6, C1 Anjo da Guarda</span>
+            </div>
+        </footer>
     </section>
 
-    <section class="espaco"></section>
-    <footer>
-        <div class="ctn_footer">
-            <nav class="nav_footer">
-                <div class="suporte">
-                    <h2>Suporte</h2>
-                    <ul>
-                        <li>Privacidade</li>
-                        <li>Políticas da Empresa</li>
-                        <li>Atendimento</li>
-                        <li>Localização</li>
-                        <li>Agendamentos</li>
-                    </ul>
-                </div>
-                <div class="localizacao">
-                    <h2>Locais</h2>
-                    <ul>
-                        <li>Av. Jerônimo - Cohama</li>
-                        <li>Santo Dumont - Cohab</li>
-                        <li>Rua. dos Barbeiros - São Cristóvão</li>
-                        <li>Av. São Raimundo - Anjo da Guarda</li>
-                    </ul>
-                </div>
-                <div class="contatos">
-                    <h2>Contato</h2>
-                    <ul>
-                        <li>WhatsApp</li>
-                        <li>Instagram</li>
-                        <li>Linkedin</li>
-                        <li>Telegram</li>
-                    </ul>
-                </div>
-                <div class="novidades_clientes">
-                    <h2>Fique informado</h2>
-                    <p>Receba atualizações sobre nossos serviços, toda semana temos novidades para você.</p>
-                    <input type="text" id="novidades_email_usuario">
-                </div>
-            </nav>
-            <hr />
-            <p id="descricao_footer">Barbershop. © 2023 </p>
-        </div>
-    </footer>
+
+
+
     <script src="https://kit.fontawesome.com/49e77ccda7.js" crossorigin="anonymous"></script>
     <script src="menu-header.js"></script>
 </body>
