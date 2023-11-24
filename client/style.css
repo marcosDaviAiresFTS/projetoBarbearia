@@ -1,3 +1,10 @@
+:root {
+    --color-primary: #1ED6B5;
+    --color-secondary: rgba(255, 255, 255, 0.539);
+    --text-color: rgb(20, 20, 20);
+    --color-back: rgb(230, 252, 248);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -30,6 +37,7 @@ body {
 }
 
 .header-main {
+    user-select: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +67,10 @@ body {
     align-items: center;
 }
 
+#name-company {
+    margin-left: 20px;
+}
+
 .list-nav-left {
     display: flex;
     align-items: center;
@@ -68,6 +80,11 @@ body {
 
 .list-nav-left li {
     margin: 0px 40px;
+}
+
+.list-nav-left li a {
+    text-decoration: none;
+    color: #323940;
 }
 
 /* Navegação do lado direito da tela */
@@ -130,6 +147,10 @@ body {
     cursor: pointer;
 }
 
+.user-profile-list li:not(:nth-of-type(n+3)):hover {
+    background: none;
+}
+
 .user-profile-list li:hover {
     background-color: rgba(153, 205, 50, 0.275);
 }
@@ -167,6 +188,7 @@ body {
 .user-profile-list hr {
     position: absolute;
     left: 50%;
+    bottom: 52%;
     transform: translateX(-50%);
     opacity: 0.2;
     width: 90%;
@@ -202,8 +224,8 @@ body {
     margin-bottom: 15px;
 }
 
-.user-profile-list ul li a:nth-child(1){
-    background-color: #1ED6B5;
+.user-profile-list ul li a:nth-child(1) {
+    background-color: var(--color-primary);
 }
 
 a {
@@ -213,7 +235,7 @@ a {
     border-radius: 30px;
 }
 
-/* Estilo dos titlos da Pagina Principal */
+/* Estilo dos Titulos da Página Principal */
 
 .main-body-start {
     display: flex;
@@ -221,7 +243,20 @@ a {
 }
 
 .h1-number-one {
-    color: #1ED6B5;
+    position: relative;
+    color: var(--color-primary);
+}
+
+.h1-number-one::after {
+    position: absolute;
+    opacity: 0.8;
+    bottom: 0;
+    right: 30px;
+    content: '';
+    display: inline-block;
+    background-color: var(--color-primary);
+    width: 290px;
+    height: 5px;
 }
 
 .descriptionMain-title h1 {
@@ -268,7 +303,7 @@ a {
 
 .main-button-page {
     border-radius: 33px;
-    background: #1ED6B5;
+    background: var(--color-primary);
     width: 210px;
     height: 45px;
     outline: none;
@@ -283,6 +318,20 @@ footer {
     padding: 0px 50px;
 }
 
+.nav-footer {
+    margin-left: 15px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+.scissors-footer img {
+    width: 68px;
+}
+
 .list-social-media-footer {
     display: flex;
     list-style: none;
@@ -295,6 +344,7 @@ footer {
 /* Parte das Avaliações dos Clientes */
 
 .customer-review-home-page {
+    user-select: none;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -302,7 +352,7 @@ footer {
 
 .review-one {
     width: max-content;
-    margin: 15px 0px;
+    margin: 5px 0px;
     border-radius: 5px;
     padding: 15px 5px;
     background-color: #ecf7f586;
@@ -313,7 +363,7 @@ footer {
 .review-two,
 .review-three {
     width: max-content;
-    margin: 15px 0px;
+    margin: 5px 0px;
     border-radius: 5px;
     padding: 15px 5px;
     display: flex;
@@ -333,7 +383,7 @@ footer {
 
 .review-two p:nth-child(2),
 .review-three p:nth-child(2) {
-    width: 310px;
+    width: 330px;
 }
 
 .description-review {
