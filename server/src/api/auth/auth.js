@@ -21,6 +21,7 @@ authRouter.route('/')
         }
     })
 
+    
     authRouter.route('/criar-conta').post( async function (req, res) {
         console.log('Rota 2');
         const { login, senha } = req.body
